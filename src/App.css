@@ -46,63 +46,79 @@ body {
 }
 
 .status:hover {
-  background-color: #00cc7a;
+  /* background-color: #00cc7a;
+   */
+   color:white;
 }
 
 .clock-container {
-  background-color: #252525;
-  padding: 15px;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
   text-align: center;
-  margin-top: 20px;
 }
 
-.date, .clock {
-  color: #00ff99;
-  font-weight: bold;
+.clock {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #4CE6A6;
 }
 
-nav {
-  margin-top: 50px;
-  width: 100%;
+.date {
+  font-size: 0.8rem;
 }
 
-.nav {
-  width: 100%;
-  padding-left: 0; /* Remove default padding */
-  list-style: none; /* Remove default list styling */
+
+.nav li {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  padding: 5px;
+  position: relative;
+  list-style-type: none;
+  
 }
 
-.nav-item {
-  width: 100%;
-  margin-bottom: 20px; /* Add space between each nav item */
+.nav li a i {
+  margin-right: 15px;
 }
 
 .nav-link {
+  display: flex;
+  color: rgb(172, 172, 172);
+  align-items: center;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav .active {
+  background-color: #1f1f1f;
+  border-radius: 12px;
   color: white;
-  padding: 15px;
-  background-color: #121212;
-  border-radius: 10px;
-  text-align: center;
-  display: block; /* Make the link block-level so it takes up the full width */
-  transition: all 0.3s ease;
+  animation: slide-in 0.3s ease-out; 
+}
+
+.nav .active .nav-link {
+  color: white;
 }
 
 .nav-link i {
-  font-size: 20px;
   margin-right: 10px;
+  transition: transform 0.3s ease; 
 }
 
-.nav-link:hover {
-  background-color: #00ff99;
-  color: #121212;
+.nav-item:not(.active):hover .nav-link {
+  color: #4CE6A6; 
+  animation: color-change 0.3s ease; 
 }
 
-/* Active Link Styling */
-.nav-item.active .nav-link {
-  background-color: #00ff99;
-  color: #121212;
+.nav-item:not(.active):hover .nav-link i {
+  transform: scale(1.65); 
+  transition: transform 0.3s ease; 
 }
+
+
 
 /* Main Content Styles */
 .main-content {
@@ -168,7 +184,5 @@ p {
     padding: 20px;
   }
 
-  .nav-link {
-    padding: 10px;
-  }
+  
 }
