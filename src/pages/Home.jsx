@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './localDB.json'; // Adjust the path as needed
-
+import '../App.css'
 const Home = () => {
   const home = data.home; // Extract 'home' data from JSON
 

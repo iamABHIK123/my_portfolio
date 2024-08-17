@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './localDB.json'; // Adjust the path as needed
-
+import '../App.css'
 const Achievements = () => {
   // Destructure achievements from data, with default empty object if undefined
   const { achievements = {} } = data;
