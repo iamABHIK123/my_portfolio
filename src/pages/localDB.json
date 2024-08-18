@@ -104,19 +104,22 @@
         "title": "Project Alpha",
         "description": "An innovative project focused on developing a cutting-edge solution for e-commerce.",
         "technologies": ["Java", "Spring Boot", "AWS"],
-        "link": "#"
+        "link": "#",
+        "image":"rng_latest.png"
       },
       {
         "title": "Project Beta",
         "description": "A comprehensive tool designed for automating business processes.",
         "technologies": ["JavaScript", "React", "Node.js"],
-        "link": "#"
+        "link": "#",
+        "image":"tic_thumb.png"
       },
       {
         "title": "Project Gamma",
         "description": "A mobile application aimed at improving user engagement.",
         "technologies": ["Android", "Kotlin", "Firebase"],
-        "link": "#"
+        "link": "#",
+        "image":"wallet.png"
       }
     ]
   }
