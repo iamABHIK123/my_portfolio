@@ -31,14 +31,19 @@ body {
 }
 
 .img-thumb {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 100%;
+  border-radius: 10%;
+  transition: transform 0.3s ease;
+}
+
+
+.img-thumb:hover {
+  transform: scale(1.1);
 }
 
 
 .status {
+  margin:20px;
   width: 100%;
   height: 40px;
   background-color: #062D1D;
@@ -101,6 +106,7 @@ body {
 }
 
 .nav-link {
+  width:'100%';
   display: flex;
   color: rgb(172, 172, 172);
   align-items: center;
@@ -120,6 +126,7 @@ body {
 }
 
 .nav-link i {
+
   margin-right: 10px;
   transition: transform 0.3s ease; 
 }
@@ -133,6 +140,7 @@ body {
   transform: scale(1.65); 
   transition: transform 0.3s ease; 
 }
+
 
 
 

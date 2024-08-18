@@ -26,12 +26,12 @@ function Sidebar() {
             <i className="bx bxs-cloud-download"></i>Download Resume
           </p>
         </div>
-        <div className="mt-4 mb-3 clock-container">
+        {/* <div className="mt-4 mb-3 clock-container">
           <div id="date" className="date"></div>
           <div id="clock" className="clock"></div>
-        </div>
-        <nav>
-          <ul className="nav flex-column">
+        </div> */}
+        <nav style={{width:'100%'}}>
+          <ul className="nav flex-column" style={{padding:0}}>
             <li
               className={`nav-item ${activeTab === "/" ? "active" : ""}`}
               id="home"
